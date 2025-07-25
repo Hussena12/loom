@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Getjob-Jobportal-s-workspace-e6710p.eu-central-1.xata.sh/db/loom_database",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

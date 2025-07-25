@@ -10,8 +10,12 @@
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.52.0",
+    "@xata.io/client": "^0.0.0-next.v93343b9646f57a1e5c51c35eccf0767c2bb80baa",
     "better-auth": "^1.2.12",
+    "dotenv": "^17.2.1",
+    "drizzle-orm": "^0.44.3",
     "next": "15.3.5",
+    "pg": "^8.16.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -22,6 +26,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@xata.io/cli": "^0.16.12",
+    "drizzle-kit": "^0.31.4",
     "eslint": "^9",
     "eslint-config-next": "15.3.5",
     "tailwindcss": "^4",
