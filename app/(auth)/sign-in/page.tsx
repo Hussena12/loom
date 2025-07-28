@@ -3,13 +3,11 @@
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
-import { supabase } from "../../supabaseClient";
+import { authClient } from "@/lib/auth.config";
 
 const page = () => {
-  const signInWithGoogle = async () => {
-    await supabase.auth.signInWithOAuth({
-      provider: "google",
-    });
+  const handleSignin = async () => {
+    return await authClient.signIn.social({ provider: "google" });
   };
 
   return (
@@ -77,7 +75,7 @@ const page = () => {
           <p>
             Create and share your very first <span>SnapCast</span> in no time!
           </p>
-          <button onClick={signInWithGoogle}>
+          <button onClick={handleSignin}>
             <Image
               src="/assets/icons/google.svg"
               alt="google"
